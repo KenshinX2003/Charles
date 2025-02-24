@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+html{
+  height: 100%;
+   overflow: hidden;
+}
+body{
+  min-height: 100%;
+
+  overflow: hidden;
+
+}
+
+nav{
+    background-color: #000000 transparent ;
+    
+    height: 70px;
+    width: 100%;
+   position: fixed;
+    
+}
+
+.logo{
+ 
+ width: 100%;
+ height: 100%;
+ max-width: 100px;
+  display: inline-block;
+
+}
+
+.navigation, .nav-contact{
+  
+  padding-top: 10px;
+}
+.navigation a{
+  display: block;
+  color: white ;
+  border-bottom:1px solid white ;
+}
+.navigation a:hover{
+  color: #ff4444;
+  font-weight: 700;
+  border: 0;
+}
+
+.nav-contact a img{
+  opacity: 1;
+  
+}
+
+
+.nav-contact a img:hover{
+ opacity: 0.3;
+
+  
+}
+
+
+
+.leftnavcontrol{
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  max-height: 70;
+}
+
+.navcontrol{
+ display: inline-flex;
+ vertical-align: middle;
+ position: fixed;
+ left: 18%;
+ 
+}
+
+.navigation{
+ 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px;
+}
+
+.navcontrolright{
+  display:inline-flex;
+  vertical-align: middle;
+  position: fixed;
+  right: 31.5%;
+ }
+
+ .navcontrolright .nav-contact{
+  margin: 20px;
+ }
+
+ .navcontrolright .nav-contact img{
+  width: 100%;
+  max-width: 35px;
+ }
+
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.centerlogo{
+justify-content: center;
+width: 100%;
+position: relative;
+display:inline-flex;
+
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 1000px;
+}
+
+section{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    
+}
+
+.about{
+    background-color: rgb(34, 34, 34);
+}
+
+
+.about-container{
+  width: 100%;
+  max-width: 1000px;
+  max-height: 600px;
+  height: 100%;
+  padding-top: 0px;
+  
+}
+
+
+
+.about-info{
+  width: 50%;
+  max-width: 500px;
+ height: 100%;
+ max-height: 400px;
+  color: white;
+  vertical-align: middle;
+ justify-content: center;
+ float: left;
+
+}
+
+
+
+.about-info .name{
+  font-size: 40px;
+  color: rgb(255, 78, 78);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-info .type{
+
+  font-size: 25px;
+  
+}
+
+
+.about-info p,h3{
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-img{
+  justify-content: center;
+width: 50%;
+max-width: 250px;
+height:300px;
+vertical-align: middle;
+float: right;
+margin-right: 10%;
+margin-top: 2%;
+
+}
+
+
+.about-img img{
+  border-radius: 10px ;
+  width: 100%;
+    border-right: 10px double rgb(255, 78, 78);
+    border-bottom: 10px solid rgb(255, 78, 78);
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.service{
+  background-color: #272727;
+    background-image: url('BGX.png');
+    background-size: 300px;
+    background-repeat: repeat;
+}
+
+.myservice{
+  
+  width: 100%;
+  min-width: 200px;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 700px;
+}
+
+.servicerow{
+  background-color: #1c1e22;
+  float: left;
+  width: 29.8%;
+  border: 2px solid rgb(255, 78, 78);
+  margin: 20px;
+  height: 100%;
+  max-height: 600px;
+ 
+}
+
+.servicerow p{
+
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+
+}
+.servicerow ul{
+  padding: 10px;
+  
+  
+}
+
+
+.servicerow ul li{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 15px;
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: white;
+}
+
+.myservice img{
+  width: 100%;
+  max-width: 300px;
+  margin-left: 10%;
+}
+
+.servicerow p{
+
+  vertical-align: middle;
+}
+
+
+
+button:hover span {
+    width: 100%;
+  }
+  
+  button:hover {
+    border: none;
+  }
+  
+ 
+  .gallery {
+    
+    background: rgb(34, 34, 34);
+    
+    
+  }
+
+  .galleryslider {
+    padding: 0 10vw;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    
+    scroll-behavior: smooth;
+  }
+  
+  .galleryslider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .galholder {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 650px;
+    margin-right: 40px;
+  }
+  
+  .galimg {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+  
+  .galthumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
+  .galholder:hover .card-btn {
+    opacity: 1;
+  }
+  
+
+  
+  
+  
+  .prebtn,
+  .nxtbtn {
+    
+    border: none;
+    width: 10vw;
+    max-width: 40px;
+    height: 100%;
+    border-radius: 10px;
+    max-height: 40px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    opacity: 60%;
+    border: 2px solid black;
+    
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+
+  .prebtn {
+    left: 10%;
+    transform: rotate(180deg);
+  }
+  
+  .nxtbtn {
+    right: -85%;
+   
+  }
+  
+  .prebtn img,
+  .nxtbtn img {
+    opacity: 0.2;
+  }
+  
+  .prebtn:hover img,
+  .nxtbtn:hover img {
+    opacity: 1;
+  }
+  
+  .Animation{
+    background-color: #272727;
+    background-image: url('BGX.png');
+    background-size: 300px;
+    background-repeat: repeat;
+}
+
+
+.vid-container .anivideo{
+width: 100%;
+max-width: 1000px;
+height: 100%;
+overflow: hidden;
+  border: 2px solid black;
+  box-shadow: 0 0 10px black;
+}
+
+  /* Resume*/
+
+  .Resume{
+    background: rgb(34, 34, 34);
+  }
+
+.resume_holder{
+  width: 100%;
+max-width: 1000px;
+  vertical-align: middle;
+ justify-content: center;
+}
+.resume_holder ul li{
+ list-style-type: none;
+}
+  .resume_holder h3{
+
+      font-size: 20px;
+      color: rgb(255, 78, 78);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 5px;
+    
+  }
+
+  .resume_holder p, li{
+    padding: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.Skills{
+  color: white;
+}
+
+  .experience li{
+    
+
+      color: white;
+     
+  }
+
+  .experience h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+  }
+  .experience p{
+    
+    color: white;
+  
+}
+
+.Skills {
+  padding-left: 10%;
+  width: 50%;
+  max-width: 400px;
+  float: left;
+  
+}
+
+.experience {
+  padding-left: 10%;
+  float: left;
+  width: 50%;
+  max-width: 400px;
+}
